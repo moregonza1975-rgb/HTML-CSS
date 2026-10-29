@@ -1,0 +1,94 @@
+/* 1. Fondo de la pantalla y centrado de la tarjeta */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #eef2f7; /* Fondo gris claro suave */
+  display: flex; /* Activa Flexbox para centrar todo */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh; /* Ocupa el 100% del alto de la ventana */
+  margin: 0;
+  padding: 20px;
+}
+
+/* 2. Caja contenedora de la tarjeta */
+.tarjeta {
+  background-color: #ffffff; /* Fondo blanco interno */
+  width: 100%;
+  max-width: 380px; /* Ancho máximo para que no se ensanche de más */
+  border-radius: 16px; /* Bordes redondeados */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* 3. Encabezado: Avatar, Nombre y Datos */
+.tarjeta-encabezado {
+  text-align: center;
+  border-bottom: 1px solid #e2e8f0; /* Línea divisoria inferior */
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.tarjeta-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Transforma la imagen en un círculo perfecto */
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+  border: 3px solid #0284c7; /* Borde azul alrededor del avatar */
+  margin-bottom: 10px;
+}
+
+.tarjeta-nombre {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.4rem;
+}
+
+.tarjeta-info {
+  margin: 4px 0 0 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+/* 4. Títulos de las secciones (Habilidades, Películas, Discos) */
+.tarjeta-seccion {
+  margin-bottom: 16px;
+}
+
+.tarjeta-seccion h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase; /* Pone los títulos en mayúsculas */
+  color: #0284c7;
+  margin: 0 0 8px 0;
+  border-bottom: 2px solid #bae6fd; /* Subrayado decorativo azul */
+  display: inline-block;
+}
+
+/* 5. Cuadro de Habilidades (Chips con Flexbox) */
+.habilidades-contenedor {
+  display: flex;
+  flex-wrap: wrap; /* Permite que si no entran al lado, pasen abajo */
+  gap: 6px; /* Espacio entre cada habilidad */
+}
+
+.etiqueta-habilidad {
+  background-color: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 12px; /* Forma de píldora/etiqueta */
+  font-weight: 500;
+}
+
+/* 6. Listas de Películas y Discos */
+.lista-favoritos {
+  margin: 0;
+  padding-left: 20px;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.lista-favoritos li {
+  margin-bottom: 4px;
+}
